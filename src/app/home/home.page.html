@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Un saludillo 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Un saludillo</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Tu mensaje</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p class="greeting-text">{{ greetingMessage }}</p>
+
+      <div class="button-container">
+        <ion-button (click)="copyMessage()" expand="block" color="primary">
+          <ion-icon slot="start" name="copy-outline"></ion-icon>
+          <ion-label>Copiar mensaje</ion-label>
+        </ion-button>
+
+        <ion-button (click)="shareMessage()" expand="block" color="secondary">
+          <ion-icon slot="start" name="share-social-outline"></ion-icon>
+          <ion-label>Compartir mensaje</ion-label>
+        </ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
