@@ -43,7 +43,7 @@ import { Dialog } from '@capacitor/dialog';
 })
 export class HomePage {
 
-  greetingMessage: string = '¡Buen Dia! Ojala no mueras hoy :D';
+  Message: string = '¡Buen Dia! Ojala no mueras hoy :D';
 
   constructor() {
     addIcons({ copyOutline, shareSocialOutline });
@@ -52,7 +52,7 @@ export class HomePage {
   async copyMessage() {
     try {
       await Clipboard.write({
-        string: this.greetingMessage
+        string: this.Message
       });
       await Dialog.alert({
         title: 'Triunfo',
@@ -82,7 +82,7 @@ export class HomePage {
 
       await Share.share({
         title: 'Un saludo',
-        text: this.greetingMessage,
+        text: this.Message,
         dialogTitle: 'Enviar saludo por medio de:', 
       });
 

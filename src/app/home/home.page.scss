@@ -5,7 +5,6 @@
   left: 0;
   right: 0;
   top: 50%;
-  transform: translateY(-50%);
 }
 
 #container strong {
@@ -22,26 +21,13 @@
   margin: 0;
 }
 
-#container a {
-  text-decoration: none;
-}
-
-ion-card {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-ion-card-content {
-  align-items: center; 
-}
-
-.greeting-text {
+.text {
   margin-bottom: 25px;
   text-align: center; 
   padding: 0 10px; 
 }
 
-.button-container {
+.buttons {
   width: 100%;
   max-width: 300px; 
   gap: 15px; 
