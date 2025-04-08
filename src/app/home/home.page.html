@@ -19,14 +19,20 @@
       <p class="text">{{ Message }}</p>
 
       <div class="buttons">
-        <ion-button (click)="copyMessage()" expand="block" color="primary">
+        <ion-button (click)="copyMessage()" color="primary">
           <ion-label>Copiar mensaje</ion-label>
         </ion-button>
 
-        <ion-button (click)="shareMessage()" expand="block" color="secondary">
+        <ion-button (click)="shareMessage()" color="secondary">
           <ion-label>Compartir mensaje</ion-label>
         </ion-button>
+
+        <ion-button (click)="readMessage()" color="tertiary">
+          <ion-label>Leer mensaje</ion-label>
+        </ion-button>
       </div>
+
+      <p>Los plugins utilizados son: Clipboard, Share, Dialog y ScreenReader.</p>
 
 
 </ion-content>
